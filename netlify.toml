@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+
+# Next.js é detectado automaticamente pela Netlify (OpenNext).
+# Opcional: descomente para usar o plugin explicitamente.
+# [[plugins]]
+#   package = "@netlify/plugin-nextjs"
