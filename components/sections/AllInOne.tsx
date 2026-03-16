@@ -5,8 +5,10 @@ import Image from 'next/image';
 import { ALL_IN_ONE } from '@/lib/constants';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 
+type TabId = 'agenda' | 'whatsapp' | 'pacientes' | 'dashboard';
+
 export function AllInOne() {
-  const [activeTab, setActiveTab] = useState(ALL_IN_ONE.tabs[0].id);
+  const [activeTab, setActiveTab] = useState<TabId>(ALL_IN_ONE.tabs[0].id);
 
   const currentTab = ALL_IN_ONE.tabs.find((t) => t.id === activeTab) ?? ALL_IN_ONE.tabs[0];
 
