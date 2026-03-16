@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-brand-red: #e63030;
+    --color-brand-red-hover: #cc2020;
+    --color-dark-bg: #0a0a0a;
+    --color-dark-card: #161616;
+    --color-dark-border: #2a2a2a;
+    --color-light-bg: #F9F9F9;
+    --color-light-card: #ffffff;
+    --color-light-border: #e8e4df;
+    --section-padding-y: clamp(3.5rem, 10vw, 8rem);
+    --section-padding-x: clamp(1.25rem, 5vw, 6rem);
+    --content-max-width: 1280px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  .animate-fade-up {
+    opacity: 0;
+    animation: fadeUp 0.5s ease forwards;
+  }
+  .animate-fade-up-delay-1 { animation-delay: 0.1s; }
+  .animate-fade-up-delay-2 { animation-delay: 0.2s; }
+  .animate-fade-up-delay-3 { animation-delay: 0.3s; }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  body {
+    @apply antialiased text-[#111111] bg-light-bg overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-500 { animation-delay: 500ms; }
+  .delay-700 { animation-delay: 700ms; }
+
+  .fade-top-lg {
+    mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 1) 8rem
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 1) 8rem
+    );
+  }
+}
