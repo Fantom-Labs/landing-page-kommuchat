@@ -7,6 +7,10 @@ import { ChevronRight, ChevronDown } from 'lucide-react';
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#131316] pt-20 sm:pt-28 pb-0 px-[var(--section-padding-x)]">
+      <div
+        className="pointer-events-none absolute inset-0 bg-[url('/images/herotexture.png')] bg-cover bg-center opacity-10"
+        aria-hidden
+      />
       {/* Blurred red ellipses (decorative) — hidden on mobile to avoid overflow */}
       <div
         className="pointer-events-none absolute left-[calc(50%-288px)] top-[250px] hidden h-[576px] w-[576px] rounded-full bg-[rgba(235,20,20,0.17)] opacity-10 blur-[140px] sm:block"
