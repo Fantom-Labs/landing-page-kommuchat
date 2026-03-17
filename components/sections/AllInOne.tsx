@@ -13,7 +13,10 @@ export function AllInOne() {
   const currentTab = ALL_IN_ONE.tabs.find((t) => t.id === activeTab) ?? ALL_IN_ONE.tabs[0];
 
   return (
-    <section className="bg-light-bg py-[var(--section-padding-y)] px-[var(--section-padding-x)] overflow-x-hidden">
+    <section
+      id="recursos"
+      className="bg-light-bg py-[var(--section-padding-y)] px-[var(--section-padding-x)] overflow-x-hidden"
+    >
       <div className="mx-auto max-w-[var(--content-max-width)]">
         {/* Cabeçalho centralizado */}
         <div className="mx-auto mb-6 max-w-[640px] text-center sm:mb-10">

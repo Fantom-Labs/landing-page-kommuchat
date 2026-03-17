@@ -91,7 +91,7 @@ function TestimonialsColumn({
 export function SocialProof() {
   return (
     <section
-      id="quem-usa"
+      id="resultados"
       aria-labelledby="social-proof-heading"
       className="overflow-hidden bg-light-bg py-[var(--section-padding-y)] px-[var(--section-padding-x)]"
     >

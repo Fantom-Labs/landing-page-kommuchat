@@ -4,8 +4,8 @@ export const CHECKOUT_URL = 'https://pay.kiwify.com.br/pb7u5xV';
 export const NAV_LINKS = [
   { label: 'Início', href: '#' },
   { label: 'Como funciona', href: '#como-funciona' },
-  { label: 'Resultados', href: '#recursos' },
-  { label: 'Planos', href: '#precos' },
+  { label: 'Resultados', href: '#resultados' },
+  { label: 'Recursos', href: '#recursos' },
 ] as const;
 
 export const HERO = {

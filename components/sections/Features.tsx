@@ -23,7 +23,7 @@ export function Features() {
   const [activeId, setActiveId] = useState<string>(FEATURES.items[1].id);
 
   return (
-    <section id="recursos" className="bg-light-bg py-[var(--section-padding-y)] px-[var(--section-padding-x)]">
+    <section id="funcionalidades" className="bg-light-bg py-[var(--section-padding-y)] px-[var(--section-padding-x)]">
       <div className="mx-auto max-w-[var(--content-max-width)]">
 
         <div className="mb-12">
