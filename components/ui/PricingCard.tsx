@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react';
+import { Check, ChevronRight } from 'lucide-react';
 import { CHECKOUT_URL } from '@/lib/constants';
 import { Button } from './Button';
 
@@ -59,11 +59,11 @@ export function PricingCard({ plan }: PricingCardProps) {
       <div className="mt-8 w-full">
         <Button
           href={CHECKOUT_URL}
-          variant="primary"
-          size="md"
-          className="w-full justify-center"
+          variant="cta"
+          className="w-full"
         >
           {plan.cta}
+          <ChevronRight className="h-4 w-4" aria-hidden />
         </Button>
       </div>
     </article>

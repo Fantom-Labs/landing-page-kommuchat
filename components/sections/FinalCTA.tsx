@@ -1,5 +1,6 @@
 'use client';
 
+import { ChevronRight } from 'lucide-react';
 import { FINAL_CTA } from '@/lib/constants';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
@@ -30,11 +31,11 @@ export function FinalCTA() {
         </p>
         <Button
           href={FINAL_CTA.ctaHref}
-          variant="primary"
-          size="lg"
+          variant="cta"
           className="relative z-10 mt-2 w-full sm:w-auto opacity-0 animate-fade-in-up [animation-delay:500ms] [animation-fill-mode:forwards]"
         >
           {FINAL_CTA.cta}
+          <ChevronRight className="h-4 w-4" aria-hidden />
         </Button>
       </div>
     </section>

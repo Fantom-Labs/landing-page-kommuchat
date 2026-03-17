@@ -207,7 +207,7 @@ export const PRICING_PLANS = [
   {
     id: 'elite',
     name: 'Elite',
-    price: 697,
+    price: 797,
     period: 'mês',
     description: 'Para redes e grandes volumes',
     features: [

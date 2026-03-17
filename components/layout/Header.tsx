@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X, ChevronRight } from 'lucide-react';
 import { CHECKOUT_URL, NAV_LINKS } from '@/lib/constants';
+import { Button } from '@/components/ui/Button';
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -67,13 +68,10 @@ export function Header() {
         </nav>
 
         <div className="relative z-10 hidden md:flex shrink-0 items-center">
-          <Link
-            href={CHECKOUT_URL}
-            className="flex h-10 w-[189px] items-center justify-center gap-2 rounded-full border border-[#E25050] bg-gradient-to-b from-[#E25050] to-[#EB1414] px-6 text-base font-medium leading-4 text-white shadow-[inset_0px_-6px_16px_#E25050,inset_-1px_-1px_0px_#FFFFFF] transition-opacity hover:opacity-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red focus-visible:ring-offset-2 focus-visible:ring-offset-dark-bg"
-          >
-            <span>Comece agora</span>
+          <Button href={CHECKOUT_URL} variant="cta" className="w-[189px]">
+            Comece agora
             <ChevronRight className="h-4 w-4" aria-hidden />
-          </Link>
+          </Button>
         </div>
 
         <button
@@ -107,14 +105,15 @@ export function Header() {
             </Link>
           ))}
           <div className="pt-4">
-            <Link
+            <Button
               href={CHECKOUT_URL}
+              variant="cta"
+              className="w-full"
               onClick={() => setMenuOpen(false)}
-              className="flex h-10 w-full items-center justify-center gap-2 rounded-full border border-[#E25050] bg-gradient-to-b from-[#E25050] to-[#EB1414] text-base font-medium text-white shadow-[inset_0px_-6px_16px_#E25050,inset_-1px_-1px_0px_#FFFFFF]"
             >
               Comece agora
               <ChevronRight className="h-4 w-4" />
-            </Link>
+            </Button>
           </div>
         </nav>
       </div>

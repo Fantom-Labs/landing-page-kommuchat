@@ -32,18 +32,17 @@ export function Hero() {
         <div className="relative z-20 animate-fade-up animate-fade-up-delay-2 mt-8 flex flex-col items-center justify-center gap-[15px] sm:flex-row">
           <Button
             href={HERO.ctaPrimaryHref}
-            variant="primary"
-            size="lg"
-            className="w-full rounded-full border-[#E25050] bg-gradient-to-b from-[#E25050] to-[#EB1414] shadow-[inset_0_-6px_16px_#E25050,inset_-1px_-1px_0_#FFFFFF] hover:shadow-[inset_0_-6px_16px_#E25050,inset_-1px_-1px_0_#FFFFFF,0_8px_30px_rgba(230,48,48,0.35)] sm:w-auto"
+            variant="cta"
+            className="w-full sm:w-auto"
           >
-            <span>Comece agora</span>
-            <ChevronRight className="ml-1 h-4 w-4" aria-hidden />
+            Comece agora
+            <ChevronRight className="h-4 w-4" aria-hidden />
           </Button>
           <Button
             href="#como-funciona"
             variant="ghost"
             size="lg"
-            className="w-full rounded-full sm:w-auto"
+            className="h-11 w-full sm:w-auto"
           >
             Conheça mais
             <ChevronDown className="ml-1 h-4 w-4" aria-hidden />
