@@ -10,6 +10,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'KOMMUchat — Secretária Virtual para Clínicas de Saúde',
+  icons: {
+    icon: '/images/favicon.ico',
+  },
   description:
     'Atendimento e agendamento automático via WhatsApp com IA. Reduza faltas, responda pacientes 24h e libere sua equipe com a KOMMUchat.',
   openGraph: {
