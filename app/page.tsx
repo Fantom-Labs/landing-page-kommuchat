@@ -7,7 +7,7 @@ import { Features } from '@/components/sections/Features';
 import { SocialProof } from '@/components/sections/SocialProof';
 import { AllInOne } from '@/components/sections/AllInOne';
 import { FAQ } from '@/components/sections/FAQ';
-import { Pricing } from '@/components/sections/Pricing';
+// import { Pricing } from '@/components/sections/Pricing';
 import { FinalCTA } from '@/components/sections/FinalCTA';
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
       <SocialProof />
       <AllInOne />
       <FAQ />
-      <Pricing />
+      {/* <Pricing /> */}
       <FinalCTA />
       <Footer />
     </main>
