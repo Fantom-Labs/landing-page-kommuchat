@@ -25,7 +25,7 @@ export function Hero() {
           className="animate-fade-up animate-fade-up-delay-1 max-w-[871px] text-[clamp(1.75rem,5vw,60px)] font-medium leading-tight tracking-[-0.03em] [background:linear-gradient(180deg,#FFFFFF_24%,#878789_100%)] [-webkit-background-clip:text] [background-clip:text] [-webkit-text-fill-color:transparent] sm:leading-[1.1]"
           style={{ backgroundClip: 'text' }}
         >
-          Atendimento virtual 24h por dia para a sua clínica de saúde
+          Atendimento virtual 24h para a sua clínica de saúde
         </h1>
         <p className="animate-fade-up animate-fade-up-delay-2 mt-3 max-w-[552px] px-3 text-sm leading-relaxed text-[#B8B8B8] sm:mt-6 sm:px-0 sm:text-base sm:leading-5">
           Tenha uma secretária virtual que atende seus pacientes, agenda consultas, verifica horários livres e cuida dos seus pacientes.</p>

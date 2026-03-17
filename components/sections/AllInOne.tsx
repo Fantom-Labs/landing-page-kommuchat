@@ -16,7 +16,7 @@ export function AllInOne() {
     <section className="bg-light-bg py-[var(--section-padding-y)] px-[var(--section-padding-x)] overflow-x-hidden">
       <div className="mx-auto max-w-[var(--content-max-width)]">
         {/* Cabeçalho centralizado */}
-        <div className="mx-auto mb-10 max-w-[640px] text-center">
+        <div className="mx-auto mb-6 max-w-[640px] text-center sm:mb-10">
           <SectionTitle
             badge={ALL_IN_ONE.badge}
             title={
@@ -30,25 +30,27 @@ export function AllInOne() {
             centered
           />
 
-          {/* Navegação em pill — design de referência */}
-          <div className="mt-8 inline-flex items-center gap-1 rounded-full border border-light-border bg-white p-1.5 shadow-sm">
-            {ALL_IN_ONE.tabs.map((tab) => {
-              const isActive = tab.id === activeTab;
-              return (
-                <button
-                  key={tab.id}
-                  type="button"
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`rounded-full px-5 py-2 text-sm font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red focus-visible:ring-offset-2 ${
-                    isActive
-                      ? 'bg-brand-red text-white shadow-sm'
-                      : 'text-[#666666] hover:text-[#111111]'
-                  }`}
-                >
-                  {tab.label}
-                </button>
-              );
-            })}
+          {/* Navegação em pill — scroll horizontal no mobile, inline no desktop */}
+          <div className="mt-6 overflow-x-auto sm:mt-8 sm:overflow-visible [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+            <div className="mx-auto inline-flex min-w-max items-center gap-1 rounded-full border border-light-border bg-white p-1.5 shadow-sm">
+              {ALL_IN_ONE.tabs.map((tab) => {
+                const isActive = tab.id === activeTab;
+                return (
+                  <button
+                    key={tab.id}
+                    type="button"
+                    onClick={() => setActiveTab(tab.id)}
+                    className={`rounded-full px-3 py-1.5 text-xs font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red focus-visible:ring-offset-2 sm:px-5 sm:py-2 sm:text-sm ${
+                      isActive
+                        ? 'bg-brand-red text-white shadow-sm'
+                        : 'text-[#666666] hover:text-[#111111]'
+                    }`}
+                  >
+                    {tab.label}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
@@ -63,6 +65,7 @@ export function AllInOne() {
           height={1080}
           className="w-full h-auto object-cover"
           priority={false}
+          sizes="(max-width: 640px) 100vw, 1920px"
         />
       </div>
     </section>
