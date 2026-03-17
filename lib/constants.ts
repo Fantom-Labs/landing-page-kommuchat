@@ -141,31 +141,31 @@ export const FAQ_ITEMS = [
     id: '1',
     question: 'Preciso ter um número novo de WhatsApp?',
     answer:
-      'Não. Você usa o mesmo número que já usa hoje. A KOMMUchat integra via API oficial do WhatsApp Business. Seus pacientes continuam falando no mesmo lugar.',
+      'Não. Você usa o mesmo número que já usa hoje. A KOMMUchat integra seu WhatsApp Business. Seus pacientes continuam falando no mesmo lugar.',
   },
   {
     id: '2',
     question: 'A IA responde sozinha ou alguém revisa?',
     answer:
-      'A IA responde automaticamente dentro dos fluxos que você configurar (agendamento, confirmação, lembretes). Quando a conversa sair do script ou o paciente pedir um humano, o atendente assume com todo o histórico na tela.',
+      'A IA responde automaticamente dentro dos fluxos que você escolher (agendamento, confirmação, lembretes). Quando a conversa sair do script ou o paciente pedir um humano, o atendente assume com todo o histórico na tela.',
   },
   {
     id: '3',
     question: 'Funciona com minha agenda atual?',
     answer:
-      'Sim. Integramos com Google Agenda e outras ferramentas comuns. Os horários disponíveis são atualizados em tempo real para o paciente.',
+      'Sim. Integramos com Google Agenda. Os horários disponíveis são atualizados em tempo real para o paciente.',
   },
   {
     id: '4',
     question: 'Quanto tempo leva para configurar?',
     answer:
-      'A maioria das clínicas fica no ar em menos de um dia. Você define os fluxos, horários e mensagens. Nosso suporte ajuda na configuração inicial se precisar.',
+      'A maioria das clínicas fica no ar em menos de 5 dias. Você define o seu fluxo, horários e mensagens. Nosso suporte cria a sua conta e configura a integração inicial.',
   },
   {
     id: '5',
     question: 'E se eu quiser cancelar?',
     answer:
-      'Sem fidelidade. Você pode cancelar quando quiser. Seus dados ficam disponíveis para exportação por 30 dias após o cancelamento.',
+      'Sem fidelidade. Você pode cancelar quando quiser.',
   },
 ] as const;
 
@@ -240,7 +240,7 @@ export const ALL_IN_ONE = {
 
 export const FINAL_CTA = {
   badge: 'Comece agora',
-  headline: 'Entre agora na era da Inteligência Artificial.',
+  headline: 'Transforme seu atendimento com Inteligência Artificial.',
   subtitle:
     'Adquira já e receba sua secretária virtual personalizada em até 7 dias. Pagamento mensal sem fidelidade.',
   cta: 'Começar agora mesmo',
