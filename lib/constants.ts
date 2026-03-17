@@ -232,9 +232,9 @@ export const ALL_IN_ONE = {
     'Não precisa mais alternar entre WhatsApp, planilha e agenda. A KOMMUchat centraliza tudo.',
   tabs: [
     { id: 'agenda',     label: 'Agenda',    image: '/images/img-3.png' },
-    { id: 'whatsapp',   label: 'WhatsApp',  image: '/images/img-3.png' },
-    { id: 'pacientes',  label: 'Pacientes', image: '/images/img-3.png' },
-    { id: 'dashboard',  label: 'Dashboard', image: '/images/img-3.png' },
+    { id: 'whatsapp',   label: 'WhatsApp',  image: '/images/img-4.png' },
+    { id: 'pacientes',  label: 'Pacientes', image: '/images/img-5.png' },
+    { id: 'dashboard',  label: 'Dashboard', image: '/images/img-6.png' },
   ],
 } as const;
 
