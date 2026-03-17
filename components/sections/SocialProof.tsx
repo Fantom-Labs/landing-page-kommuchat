@@ -11,16 +11,10 @@ import {
 
 type TestimonialItem = (typeof TESTIMONIALS)[number];
 
-// 9 items for 3 columns of 3 (repeat to fill)
-const allTestimonials: TestimonialItem[] = [
-  ...TESTIMONIALS,
-  ...TESTIMONIALS,
-  ...TESTIMONIALS,
-].slice(0, 9);
-
-const firstColumn = allTestimonials.slice(0, 3);
-const secondColumn = allTestimonials.slice(3, 6);
-const thirdColumn = allTestimonials.slice(6, 9);
+// 6 testimonials → 2 per column (no repetition)
+const firstColumn = [...TESTIMONIALS].slice(0, 2);
+const secondColumn = [...TESTIMONIALS].slice(2, 4);
+const thirdColumn = [...TESTIMONIALS].slice(4, 6);
 
 function TestimonialsColumn({
   testimonials,

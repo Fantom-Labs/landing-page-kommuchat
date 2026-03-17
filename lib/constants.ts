@@ -117,7 +117,7 @@ export const TESTIMONIALS = [
     avatar: '/images/profile1.png',
   },
   {
-    id: '2',  
+    id: '2',
     quote:
       'Finalmente parei de perder horas respondendo "qual horário tem?". A KOMMUchat faz isso por mim.',
     name: 'Dra. Aracely Santana',
@@ -133,6 +133,33 @@ export const TESTIMONIALS = [
     role: 'Mellamface, Recife',
     stat: null,
     avatar: '/images/profile3.png',
+  },
+  {
+    id: '4',
+    quote:
+      'Estou desde 2016 em parceria com a KOMMU. Nesse período pude contar com essa equipe maravilhosa que pode me ajudar a alcançar meus objetivos. Hoje estou bem satisfeito!!',
+    name: 'Dr. Jaziel Ribeiro',
+    role: 'Novo Olhar',
+    stat: null,
+    avatar: '/images/profile5.png',
+  },
+  {
+    id: '5',
+    quote:
+      'O diferencial da KOMMU é entender os anseios do clientes e adequá-los às premissas do mercado!',
+    name: 'Dr. Gustavo Motta',
+    role: 'Cirurgião Plástico',
+    stat: null,
+    avatar: '/images/profile7.png',
+  },
+  {
+    id: '6',
+    quote:
+      'Indico a KOMMU, pois o sucesso da nossa parceria é onde juntos enxergamos os resultados.',
+    name: 'Dr. Rodrigo Mello',
+    role: 'Novo Olhar Oftalmologia',
+    stat: null,
+    avatar: '/images/profile6.png',
   },
 ] as const;
 
