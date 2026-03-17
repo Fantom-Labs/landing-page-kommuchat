@@ -1,10 +1,11 @@
 'use client';
 
 import Image from 'next/image';
+import { MessageCircle } from 'lucide-react';
 
 interface BadgeProps {
   children: React.ReactNode;
-  variant?: 'default' | 'social' | 'whatsapp';
+  variant?: 'default' | 'social' | 'whatsapp' | 'atendimento';
   className?: string;
 }
 
@@ -22,9 +23,20 @@ export function Badge({ children, variant = 'default', className = '' }: BadgePr
   if (variant === 'whatsapp') {
     return (
       <span
-        className={`inline-flex w-full max-w-[480px] mx-0 flex-row items-center justify-center gap-1 rounded-[60px] border border-[rgba(18,140,126,0.25)] bg-[rgba(18,140,126,0.1)] p-2 text-[13px] sm:text-[14px] font-medium tracking-[0.08em] text-[#128C7E] text-left ${className}`}
+        className={`inline-flex w-fit flex-row items-center justify-start gap-1.5 rounded-[60px] border border-[rgba(18,140,126,0.25)] bg-[rgba(18,140,126,0.1)] px-3 py-1.5 text-[13px] sm:text-[14px] font-medium tracking-[0.08em] text-[#128C7E] text-left ${className}`}
       >
         <WhatsAppIcon className="h-[16px] w-[16px] shrink-0" />
+        {children}
+      </span>
+    );
+  }
+
+  if (variant === 'atendimento') {
+    return (
+      <span
+        className={`inline-flex w-fit flex-row items-center justify-start gap-1.5 rounded-[60px] border border-[rgba(18,140,126,0.25)] bg-[rgba(18,140,126,0.1)] px-3 py-1.5 text-[13px] sm:text-[14px] font-medium tracking-[0.08em] text-[#128C7E] text-left ${className}`}
+      >
+        <MessageCircle className="h-4 w-4 shrink-0" aria-hidden />
         {children}
       </span>
     );

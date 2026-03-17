@@ -55,7 +55,7 @@ export function Problem() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div>
             <SectionTitle
-              badge={<Badge variant="whatsapp">A melhor IA para atendimento da saúde no WhatsApp</Badge>}
+              badge={<Badge variant="atendimento">A melhor IA para atendimento da saúde</Badge>}
               title={
                 <>
                  Criamos a sua secretária virtual {' '}
