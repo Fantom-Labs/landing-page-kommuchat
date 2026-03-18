@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { WhatsappFloat } from '@/components/ui/WhatsappFloat';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -36,7 +37,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={inter.variable}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        {children}
+        <WhatsappFloat />
+      </body>
     </html>
   );
 }
