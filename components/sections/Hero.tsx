@@ -23,7 +23,7 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto flex max-w-[var(--content-max-width)] flex-col items-center text-center">
         <Badge variant="social" className="mb-3 animate-fade-up border-white/10 bg-white/[0.12] text-[#D0D0D0] backdrop-blur-[1.5px] sm:mb-4">
-          Mais de 1000 consultas marcadas com IA
+          +1000 consultas marcadas com IA
         </Badge>
         <h1
           className="animate-fade-up animate-fade-up-delay-1 max-w-[871px] text-[clamp(1.75rem,5vw,60px)] font-medium leading-tight tracking-[-0.03em] [background:linear-gradient(180deg,#FFFFFF_24%,#878789_100%)] [-webkit-background-clip:text] [background-clip:text] [-webkit-text-fill-color:transparent] sm:leading-[1.1]"

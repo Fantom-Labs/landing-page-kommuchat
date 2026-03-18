@@ -117,8 +117,21 @@ export function SocialProof() {
             />
           </div>
 
+          {/* Mobile: coluna animada com pelo menos 4 depoimentos */}
           <div
-            className="mt-10 flex justify-center gap-6 overflow-hidden max-h-[740px] [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]"
+            className="mt-10 flex justify-center overflow-hidden max-h-[740px] [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] md:hidden"
+            role="region"
+            aria-label="Depoimentos em rolagem"
+          >
+            <TestimonialsColumn
+              testimonials={[...TESTIMONIALS].slice(0, 4)}
+              duration={18}
+            />
+          </div>
+
+          {/* Desktop: colunas animadas com rolagem infinita (comportamento atual) */}
+          <div
+            className="mt-10 hidden justify-center gap-6 overflow-hidden max-h-[740px] [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] md:flex"
             role="region"
             aria-label="Depoimentos em rolagem"
           >
