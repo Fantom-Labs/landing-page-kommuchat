@@ -93,7 +93,7 @@ export function Features() {
           </ul>
 
           {/* Visual / mockup area */}
-          <div className="relative flex items-center justify-center rounded-2xl bg-[#F4F4F5] border border-light-border min-h-[380px] overflow-hidden">
+          <div className="relative hidden md:flex items-center justify-center rounded-2xl bg-[#F4F4F5] border border-light-border min-h-[380px] overflow-hidden">
             {/* Subtle grid background */}
             <div
               className="absolute inset-0 opacity-40"
