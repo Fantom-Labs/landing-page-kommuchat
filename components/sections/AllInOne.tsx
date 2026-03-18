@@ -15,7 +15,7 @@ export function AllInOne() {
   return (
     <section
       id="recursos"
-      className="bg-light-bg py-[var(--section-padding-y)] px-[var(--section-padding-x)] overflow-x-hidden"
+      className="hidden bg-light-bg py-[var(--section-padding-y)] px-[var(--section-padding-x)] overflow-x-hidden md:block"
     >
       <div className="mx-auto max-w-[var(--content-max-width)]">
         {/* Cabeçalho centralizado */}
