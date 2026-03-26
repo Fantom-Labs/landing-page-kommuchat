@@ -81,7 +81,7 @@ export const FEATURES = {
   items: [
     {
       id: '1',
-      title: 'Agendamento 24h',
+      title: 'Agendamentos',
       description: 'Pacientes agendam sozinhos pelo WhatsApp. Horários disponíveis em tempo real.',
       icon: 'CalendarClock',
     },
@@ -93,8 +93,8 @@ export const FEATURES = {
     },
     {
       id: '3',
-      title: 'Histórico do paciente',
-      description: 'Conversas e histórico em um único perfil. CRM integrado ao WhatsApp.',
+      title: 'Atendimento 24h por dia',
+      description: 'Atendimento e agendamento de consultas na sua agenda 24h.',
       icon: 'Users',
     },
     {

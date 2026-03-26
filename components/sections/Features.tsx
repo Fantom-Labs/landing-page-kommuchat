@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import {
   CalendarClock,
   BellRing,
@@ -19,8 +20,16 @@ const iconMap: Record<string, LucideIcon> = {
   BarChart3,
 };
 
+const featureImagesById: Record<string, string> = {
+  '1': '/images/features-1.png',
+  '2': '/images/features-2.png',
+  '3': '/images/features-3.png',
+  '4': '/images/features-4.png',
+};
+
 export function Features() {
   const [activeId, setActiveId] = useState<string>(FEATURES.items[1].id);
+  const activeImageSrc = featureImagesById[activeId] ?? '/images/features-1.png';
 
   return (
     <section id="funcionalidades" className="bg-light-bg py-[var(--section-padding-y)] px-[var(--section-padding-x)]">
@@ -94,35 +103,14 @@ export function Features() {
 
           {/* Visual / mockup area */}
           <div className="relative hidden md:flex items-center justify-center rounded-2xl bg-[#F4F4F5] border border-light-border min-h-[380px] overflow-hidden">
-            {/* Subtle grid background */}
-            <div
-              className="absolute inset-0 opacity-40"
-              style={{
-                backgroundImage:
-                  'linear-gradient(#d4d4d8 1px, transparent 1px), linear-gradient(90deg, #d4d4d8 1px, transparent 1px)',
-                backgroundSize: '32px 32px',
-              }}
+            <Image
+              key={activeId}
+              src={activeImageSrc}
+              alt="Visual da funcionalidade selecionada"
+              fill
+              className="object-cover"
+              priority
             />
-            {/* Active feature highlight card */}
-            <div className="relative z-10 bg-white rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.12)] p-8 max-w-[300px] w-full mx-6">
-              {(() => {
-                const active = FEATURES.items.find((i) => i.id === activeId)!;
-                const Icon = iconMap[active.icon] ?? CalendarClock;
-                return (
-                  <>
-                    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-red/10 text-brand-red">
-                      <Icon size={24} />
-                    </div>
-                    <h3 className="text-[#111111] text-lg font-bold tracking-[-0.01em]">
-                      {active.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-[#666666] leading-[1.65]">
-                      {active.description}
-                    </p>
-                  </>
-                );
-              })()}
-            </div>
           </div>
 
         </div>
