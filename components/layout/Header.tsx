@@ -40,7 +40,19 @@ export function Header() {
         <Link
           href="/"
           className="relative z-10 flex shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red focus-visible:ring-offset-2 focus-visible:ring-offset-dark-bg rounded-full"
-          aria-label="KOMMUchat - Página inicial"
+          aria-label="KOMMUchat - Ir para o topo"
+          onClick={(e) => {
+            setMenuOpen(false);
+            if (typeof window === 'undefined') return;
+            const path = window.location.pathname;
+            if (path === '/' || path === '') {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              if (window.location.hash) {
+                history.replaceState(null, '', '/');
+              }
+            }
+          }}
         >
           <Image
             src="/images/kommuchat_logo dark.svg"
