@@ -6,7 +6,7 @@ import { ChevronRight, ChevronDown } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#131316] pt-20 sm:pt-28 pb-0 px-[var(--section-padding-x)]">
+    <section className="relative overflow-hidden bg-[#131316] pt-24 pb-24 sm:pt-28 sm:pb-0 px-[var(--section-padding-x)]">
       <div
         className="pointer-events-none absolute inset-0 bg-[url('/images/herotexture.png')] bg-cover bg-center opacity-10"
         aria-hidden
@@ -46,15 +46,15 @@ export function Hero() {
             href="#como-funciona"
             variant="ghost"
             size="lg"
-            className="h-11 w-full sm:w-auto"
+            className="max-sm:hidden h-11 w-full sm:w-auto"
           >
             Conheça mais
             <ChevronDown className="ml-1 h-4 w-4" aria-hidden />
           </Button>
         </div>
 
-        {/* Dashboard / hero image — mobile: less overlap; desktop unchanged */}
-        <div className="relative z-10 mt-6 w-full max-w-[1710px] -translate-y-[24px] -mb-[24px] sm:mt-16 sm:-translate-y-[100px] sm:-mb-[100px]">
+        {/* Dashboard / hero image — desktop only; hidden on mobile */}
+        <div className="relative z-10 hidden w-full max-w-[1710px] sm:mt-16 sm:block sm:-translate-y-[100px] sm:-mb-[100px]">
           <Image
             src="/images/hero image.png"
             alt="Dashboard KOMMUchat — consultas, pacientes, agenda e relatórios"
