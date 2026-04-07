@@ -110,8 +110,8 @@ export function SocialProof() {
           <div className="mx-auto mb-8 max-w-2xl text-center md:mb-14">
             <SectionTitle
               badge="Quem usa"
-              title="Clínicas que já automatizaram o WhatsApp"
-              subtitle="Nutricionistas, psicólogos e consultórios que reduziram faltas e ganharam tempo."
+              title="Conheça as clínicas que transformaram o WhatsApp em uma máquina de agendamentos"
+              subtitle="Nutricionistas, médicos e consultórios que reduziram faltas, ganharam tempo e aumentaram seus resultados com atendimento inteligente."
               variant="light"
               centered
             />

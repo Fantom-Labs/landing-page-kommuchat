@@ -29,26 +29,26 @@ export function Hero() {
           className="animate-fade-up animate-fade-up-delay-1 max-w-[871px] text-[clamp(1.75rem,5vw,60px)] font-medium leading-tight tracking-[-0.03em] [background:linear-gradient(180deg,#FFFFFF_24%,#878789_100%)] [-webkit-background-clip:text] [background-clip:text] [-webkit-text-fill-color:transparent] sm:leading-[1.1]"
           style={{ backgroundClip: 'text' }}
         >
-          Atendimento virtual 24h para a sua clínica de saúde
+          Atendimento IA 24h para o seu consultório
         </h1>
         <p className="animate-fade-up animate-fade-up-delay-2 mt-3 max-w-[552px] px-3 text-sm leading-relaxed text-[#B8B8B8] sm:mt-6 sm:px-0 sm:text-base sm:leading-5">
-          Tenha uma secretária virtual que atende seus pacientes, agenda consultas, verifica horários livres e cuida dos seus pacientes.</p>
+          Criamos sua secretária IA totalmente personalizada para atender seus pacientes, verificar horários livres, agendar consultas, e resolver tudo que você precisa.</p>
         <div className="relative z-20 animate-fade-up animate-fade-up-delay-2 mt-6 flex flex-col items-center justify-center gap-3 sm:mt-8 sm:flex-row sm:gap-[15px]">
           <Button
             href={HERO.ctaPrimaryHref}
             variant="cta"
             className="w-full sm:w-auto"
           >
-            Comece agora
+            Contrate agora
             <ChevronRight className="h-4 w-4" aria-hidden />
           </Button>
           <Button
-            href="#como-funciona"
+            href="https://bit.ly/KOMMUchat"
             variant="ghost"
             size="lg"
             className="max-sm:hidden h-11 w-full sm:w-auto"
           >
-            Conheça mais
+            Faça uma simulação
             <ChevronDown className="ml-1 h-4 w-4" aria-hidden />
           </Button>
         </div>

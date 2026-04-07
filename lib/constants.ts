@@ -29,7 +29,7 @@ export const PROBLEM = {
   badge: 'O problema',
   headline: 'WhatsApp virou trabalho em tempo integral.',
   headlineAccent: 'com tudo que você precisa',
-  body: 'Entre mensagens de agendamento, confirmações e dúvidas frequentes, sua equipe perde horas. E mesmo assim pacientes continuam sem resposta. Com a KOMMUchat, você tem:',
+  body: 'Nossa equipe de suporte configura, programa e ajusta toda a sua secretária IA de forma personalizada para o seu consultório. Você não precisa entender de tecnologia, nem perder tempo com isso.',
   checklist: [
     'Lembretes automáticos de consultas para seus pacientes',
     'Atendimento e agendamento de consultas na sua agenda 24h',
@@ -41,26 +41,26 @@ export const PROBLEM = {
 export const SOLUTION_STEPS = [
   {
     id: '1',
-    title: 'Conecte seu WhatsApp',
-    description: 'Integração em minutos. Seus pacientes continuam falando com o mesmo número.',
+    title: 'Conecte em minutos',
+    description: 'Integração com seu WhatsApp em minutos. Você não precisa trocar o número do seu consultório.',
     icon: 'MessageCircle',
   },
   {
     id: '2',
-    title: 'Seu estilo',
-    description: 'Escolha como a IA atende seus pacientes e todas as dúvidas frequentes.',
+    title: 'Personalizamos para você',
+    description: 'Construímos sua secretária IA para atender seus pacientes de forma totalmente personalizada.',
     icon: 'Workflow',
   },
   {
     id: '3',
     title: 'Agenda integrada',
-    description: 'Todas as consultas em um só lugar. CRM com histórico do paciente.',
+    description: 'Todas as consultas em um só lugar. Painel de controle com histórico do paciente.',
     icon: 'Calendar',
   },
   {
     id: '4',
-    title: 'Humanize quando precisar',
-    description: 'Passe para um atendente com contexto completo. Nada se perde.',
+    title: 'Tenha total controle sobre a sua IA',
+    description: 'Com nosso CRM, você tem total controle sobre a sua IA',
     icon: 'UserCheck',
   },
 ] as const;
@@ -73,34 +73,34 @@ export const HOW_IT_WORKS = {
 
 export const FEATURES = {
   badge: 'Funcionalidades',
-  headline: 'Tudo que seu consultório precisa em um só lugar.',
-  headlineAccent: 'um só lugar',
-  subtitle: 'Agendamento, CRM, lembretes e relatórios. Sem planilhas nem trabalho manual.',
+  headline: 'Tudo que seu consultório precisa em uma secretária só.',
+  headlineAccent: 'uma secretária só',
+  subtitle: 'Agendamento, CRM, lembretes e relatórios. Construímos a sua secretária IA totalmente personalizada para você.',
   cta: 'Ver todos os recursos',
   ctaHref: CHECKOUT_URL,
   items: [
     {
       id: '1',
       title: 'Agendamentos',
-      description: 'Pacientes agendam sozinhos pelo WhatsApp. Horários disponíveis em tempo real.',
+      description: 'Nossa secretária IA atende seus pacientes, busca os melhores horários na sua agenda e marca a consulta de forma totalmente automatizada.',
       icon: 'CalendarClock',
     },
     {
       id: '2',
       title: 'Confirmações automáticas',
-      description: 'Lembretes e confirmação antes da consulta. Reduza faltas sem ligar.',
+      description: 'Ela envia lembretes e confirmações automáticas de forma estratégica, garantindo que o paciente não esqueça da consulta.',
       icon: 'BellCheck',
     },
     {
       id: '3',
       title: 'Atendimento 24h por dia',
-      description: 'Atendimento e agendamento de consultas na sua agenda 24h.',
+      description: 'A sua secretária IA trabalha 24h por dia, todos os dias da semana. Nunca tira folga e está sempre pronta para oferecer o melhor atendimento.',
       icon: 'Users',
     },
     {
       id: '4',
       title: 'Relatórios e métricas',
-      description: 'Taxa de comparecimento, horários mais procurados e desempenho da equipe.',
+      description: 'Ela cria relatórios importantes, onde você pode mensurar a taxa de comparecimento, o desempenho da sua equipe e muito mais.',
       icon: 'BarChart3',
     },
   ],
@@ -253,10 +253,10 @@ export const PRICING_PLANS = [
 
 export const ALL_IN_ONE = {
   badge: 'Tudo em um',
-  headline: 'Conversas, CRM, agenda e relatórios em uma única plataforma.',
-  headlineAccent: 'uma única plataforma',
+  headline: 'Seu atendimento completo com uma só ferramenta, sem perder tempo nem pacientes',
+  headlineAccent: 'sem perder tempo nem pacientes',
   subtitle:
-    'Não precisa mais alternar entre WhatsApp, planilha e agenda. A KOMMUchat centraliza tudo.',
+    'Pare de alternar entre WhatsApp, planilhas e agenda. Com a KOMMUchat, você centraliza conversas, CRM, agendamentos e relatórios em uma única plataforma, de forma simples, organizada e com o apoio da nossa equipe de suporte.',
   tabs: [
     { id: 'agenda',     label: 'Agenda',    image: '/images/img-3.png' },
     { id: 'whatsapp',   label: 'WhatsApp',  image: '/images/img-4.png' },

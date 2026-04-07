@@ -24,7 +24,7 @@ export function AllInOne() {
             badge={ALL_IN_ONE.badge}
             title={
               <>
-                Conversas, CRM, agenda e relatórios em{' '}
+                Seu atendimento completo com uma só ferramenta,{' '}
                 <span className="text-brand-red">{ALL_IN_ONE.headlineAccent}</span>.
               </>
             }
