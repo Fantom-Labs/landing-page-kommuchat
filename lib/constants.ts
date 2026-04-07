@@ -139,7 +139,7 @@ export const TESTIMONIALS = [
     quote:
       'Estou desde 2016 em parceria com a KOMMU. Nesse período pude contar com essa equipe maravilhosa que pode me ajudar a alcançar meus objetivos. Hoje estou bem satisfeito!!',
     name: 'Dr. Jaziel Ribeiro',
-    role: 'Novo Olhar',
+    role: 'Otorrino, Recife',
     stat: null,
     avatar: '/images/profile5.png',
   },
@@ -148,7 +148,7 @@ export const TESTIMONIALS = [
     quote:
       'O diferencial da KOMMU é entender os anseios do clientes e adequá-los às premissas do mercado!',
     name: 'Dr. Gustavo Motta',
-    role: 'Cirurgião Plástico',
+    role: 'Otorrino, Recife',
     stat: null,
     avatar: '/images/profile7.png',
   },
