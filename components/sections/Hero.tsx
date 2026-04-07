@@ -43,7 +43,7 @@ export function Hero() {
             <ChevronRight className="h-4 w-4" aria-hidden />
           </Button>
           <Button
-            href="https://bit.ly/KOMMUchat"
+            href="https://api.whatsapp.com/send?phone=5581999724313&text=Oi,%20gostaria%20de%20saber%20mais%20sobre%20a%20KOMMUchat!%20e%20o%20Atendimento%20IA"
             variant="ghost"
             size="lg"
             className="max-sm:hidden h-11 w-full sm:w-auto"
