@@ -80,8 +80,14 @@ export function Header() {
         </nav>
 
         <div className="relative z-10 hidden md:flex shrink-0 items-center">
-          <Button href={CHECKOUT_URL} variant="cta" className="w-[189px]">
-            Comece agora
+          <Button
+            href={CHECKOUT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="cta"
+            className="w-[189px]"
+          >
+            Contrate agora
             <ChevronRight className="h-4 w-4" aria-hidden />
           </Button>
         </div>

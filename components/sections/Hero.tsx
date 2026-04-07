@@ -36,6 +36,8 @@ export function Hero() {
         <div className="relative z-20 animate-fade-up animate-fade-up-delay-2 mt-6 flex flex-col items-center justify-center gap-3 sm:mt-8 sm:flex-row sm:gap-[15px]">
           <Button
             href={HERO.ctaPrimaryHref}
+            target="_blank"
+            rel="noopener noreferrer"
             variant="cta"
             className="w-full sm:w-auto"
           >
@@ -44,6 +46,8 @@ export function Hero() {
           </Button>
           <Button
             href="https://api.whatsapp.com/send?phone=5581999724313&text=Oi,%20gostaria%20de%20saber%20mais%20sobre%20a%20KOMMUchat!%20e%20o%20Atendimento%20IA"
+            target="_blank"
+            rel="noopener noreferrer"
             variant="ghost"
             size="lg"
             className="max-sm:hidden h-11 w-full sm:w-auto"

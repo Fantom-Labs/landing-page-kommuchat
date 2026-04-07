@@ -269,7 +269,7 @@ export const FINAL_CTA = {
   badge: 'Comece agora',
   headline: 'Transforme seu atendimento com Inteligência Artificial.',
   subtitle:
-    'Adquira já e receba sua secretária virtual personalizada em até 7 dias. Pagamento mensal sem fidelidade.',
+    'Adquira já e receba sua secretária IA personalizada em até 7 dias. Pagamento mensal sem fidelidade.',
   cta: 'Começar agora mesmo',
   ctaHref: CHECKOUT_URL,
 } as const;
@@ -279,7 +279,6 @@ export const FOOTER = {
   links: {
     Produto: [
       { label: 'Recursos', href: '#recursos' },
-      { label: 'Preços', href: '#precos' },
       { label: 'FAQ', href: '#faq' },
     ],
     Legal: [

@@ -6,6 +6,8 @@ type ButtonSize = 'sm' | 'md' | 'lg';
 interface ButtonProps {
   children: React.ReactNode;
   href?: string;
+  target?: React.HTMLAttributeAnchorTarget;
+  rel?: string;
   variant?: ButtonVariant;
   size?: ButtonSize;
   className?: string;
@@ -31,6 +33,8 @@ const variantStyles: Record<ButtonVariant, string> = {
 export function Button({
   children,
   href,
+  target,
+  rel,
   variant = 'primary',
   size = 'md',
   className = '',
@@ -41,7 +45,7 @@ export function Button({
 
   if (href) {
     return (
-      <Link href={href} className={base} onClick={onClick}>
+      <Link href={href} className={base} onClick={onClick} target={target} rel={rel}>
         {children}
       </Link>
     );
