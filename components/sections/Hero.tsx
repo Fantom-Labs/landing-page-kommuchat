@@ -35,7 +35,7 @@ export function Hero() {
       </div>
 
       {/* Text content */}
-      <div className="relative z-10 mx-auto w-full max-w-[var(--content-max-width)] flex flex-col sm:block">
+      <div className="relative z-10 mx-auto w-full max-w-[var(--content-max-width)] flex flex-col sm:block sm:-translate-y-2">
         <div className="flex flex-1 flex-col items-center text-center sm:items-start sm:text-left w-full sm:max-w-[831px] rounded-2xl sm:rounded-none backdrop-blur-[30px] sm:backdrop-blur-none bg-black/10 sm:bg-transparent border border-white/[0.04] sm:border-transparent px-6 py-10 sm:px-0 sm:py-0 justify-between sm:justify-start">
           <Badge
             variant="social"
