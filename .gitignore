@@ -30,3 +30,7 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+
+# Backup
+components/sections/Hero.backup.tsx
+
