@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { HERO } from '@/lib/constants';
-import { ChevronRight, ChevronDown } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 
 export function Hero() {
   return (
@@ -22,8 +22,19 @@ export function Hero() {
         aria-hidden
       />
 
-      {/* Hero image — full width background, desktop only */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* Hero image — mobile */}
+      <div className="absolute inset-0 pointer-events-none sm:hidden">
+        <Image
+          src="/images/hero-mobile.png"
+          alt=""
+          fill
+          priority
+          className="object-cover object-center"
+          aria-hidden
+        />
+      </div>
+      {/* Hero image — desktop */}
+      <div className="absolute inset-0 pointer-events-none hidden sm:block">
         <Image
           src="/images/hero-img.png"
           alt=""
@@ -70,10 +81,13 @@ export function Hero() {
               rel="noopener noreferrer"
               variant="ghost"
               size="lg"
-              className="max-sm:hidden h-11 w-full sm:w-auto"
+              className="h-11 w-full sm:w-auto"
             >
-              Faça uma simulação
-              <ChevronDown className="ml-1 h-4 w-4" aria-hidden />
+              Teste no whatsapp
+              <span className="relative ml-2 flex h-2 w-2" aria-hidden>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-red-500 shadow-[0_0_6px_2px_rgba(235,20,20,0.7)]" />
+              </span>
             </Button>
           </div>
         </div>
