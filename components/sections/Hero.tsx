@@ -50,7 +50,7 @@ export function Hero() {
             <span className="block">Atendimento IA 24h</span>
             <span className="block">para o seu consultório</span>
           </h1>
-          <p className="animate-fade-up animate-fade-up-delay-2 mt-4 max-w-[488px] px-3 text-sm leading-relaxed text-[#B8B8B8] sm:mt-6 sm:px-0 sm:text-base sm:leading-5">
+          <p className="animate-fade-up animate-fade-up-delay-2 mt-2 max-w-[488px] px-3 text-sm leading-relaxed text-[#B8B8B8] sm:mt-6 sm:px-0 sm:text-base sm:leading-5">
             Criamos sua secretária IA totalmente personalizada para atender seus pacientes, verificar horários livres, agendar consultas, e resolver tudo que você precisa.
           </p>
           <div className="relative z-20 animate-fade-up animate-fade-up-delay-2 mt-6 flex flex-col items-center justify-center gap-3 sm:mt-8 sm:flex-row sm:items-center sm:justify-start sm:gap-[15px]">
