@@ -4,7 +4,11 @@ import { HOW_IT_WORKS } from '@/lib/constants';
 
 export function HowItWorks() {
   return (
-    <section id="como-funciona" className="bg-dark-bg py-[var(--section-padding-y)] px-[var(--section-padding-x)]">
+    <section id="como-funciona" className="relative bg-dark-bg py-[var(--section-padding-y)] px-[var(--section-padding-x)]">
+      <div
+        className="pointer-events-none absolute inset-0 bg-[url('/images/texture.png')] bg-cover bg-center opacity-90"
+        aria-hidden
+      />
       <div className="mx-auto max-w-[var(--content-max-width)]">
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-14">
           <SectionTitle

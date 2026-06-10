@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        uw: '2560px',
+      },
       colors: {
         brand: {
           red: '#E63030',

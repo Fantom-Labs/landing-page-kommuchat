@@ -33,8 +33,19 @@ export function Hero() {
           aria-hidden
         />
       </div>
+      {/* Hero image — ultrawide (2560px+) */}
+      <div className="absolute inset-0 pointer-events-none hidden uw:block">
+        <Image
+          src="/images/hero-img-uw.png"
+          alt=""
+          fill
+          priority
+          className="object-cover object-center"
+          aria-hidden
+        />
+      </div>
       {/* Hero image — desktop */}
-      <div className="absolute inset-0 pointer-events-none hidden sm:block">
+      <div className="absolute inset-0 pointer-events-none hidden sm:block uw:hidden">
         <Image
           src="/images/hero-img.png"
           alt=""
