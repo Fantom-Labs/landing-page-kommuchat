@@ -14,7 +14,8 @@ const problemMessages = [
 ];
 
 export function Problem() {
-  const [visibleCount, setVisibleCount] = useState(1);
+  const [visibleCount, setVisibleCount] = useState(0);
+  const [typingType, setTypingType] = useState<'incoming' | 'outgoing' | null>(null);
   const [animationStarted, setAnimationStarted] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -39,14 +40,32 @@ export function Problem() {
   useEffect(() => {
     if (!animationStarted) return;
 
-    const interval = setInterval(() => {
-      setVisibleCount((current) => {
-        if (current >= problemMessages.length) return current;
-        return current + 1;
-      });
-    }, 1200);
+    let timeoutId: ReturnType<typeof setTimeout>;
 
-    return () => clearInterval(interval);
+    const startCycle = () => {
+      setVisibleCount(0);
+      setTypingType(problemMessages[0].type);
+
+      const showMessage = (i: number) => {
+        setVisibleCount(i + 1);
+        setTypingType(null);
+        const next = i + 1;
+        if (next < problemMessages.length) {
+          timeoutId = setTimeout(() => {
+            setTypingType(problemMessages[next].type);
+            timeoutId = setTimeout(() => showMessage(next), 1800);
+          }, 2000);
+        } else {
+          timeoutId = setTimeout(startCycle, 3000);
+        }
+      };
+
+      timeoutId = setTimeout(() => showMessage(0), 1800);
+    };
+
+    startCycle();
+
+    return () => clearTimeout(timeoutId);
   }, [animationStarted]);
 
   return (
@@ -77,7 +96,7 @@ export function Problem() {
             </ul>
           </div>
           <div className="flex justify-center md:justify-end">
-            <WhatsappBubble messages={problemMessages.slice(0, visibleCount)} />
+            <WhatsappBubble messages={problemMessages.slice(0, visibleCount)} typingType={typingType} />
           </div>
         </div>
       </div>
