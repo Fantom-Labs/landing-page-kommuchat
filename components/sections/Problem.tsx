@@ -1,6 +1,6 @@
 'use client';
 import { PROBLEM } from '@/lib/constants';
-import { Check } from 'lucide-react';
+import { Check, ChevronLeft, Video, Phone, MoreVertical, Smile, Mic } from 'lucide-react';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 import { Badge } from '@/components/ui/Badge';
 import { WhatsappBubble } from '@/components/ui/WhatsappBubble';
@@ -95,8 +95,33 @@ export function Problem() {
               ))}
             </ul>
           </div>
-          <div className="flex justify-center md:justify-end">
-            <WhatsappBubble messages={problemMessages.slice(0, visibleCount)} typingType={typingType} />
+          <div className="flex flex-col order-first md:order-last h-[400px] md:h-[540px] md:w-[350px] md:ml-auto rounded-2xl md:rounded-[32px] overflow-hidden shadow-md border border-black/10">
+            {/* Header */}
+            <div className="flex items-center gap-2 px-3 py-2 bg-[#075E54] shrink-0">
+              <ChevronLeft size={20} className="text-white/80" />
+              <div className="w-8 h-8 rounded-full bg-[#128C7E] flex items-center justify-center shrink-0">
+                <span className="text-white text-[10px] font-bold">SV</span>
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-white text-[13px] font-medium leading-none">Secretária Virtual</p>
+                <p className="text-white/60 text-[11px] mt-0.5">online</p>
+              </div>
+              <Video size={18} className="text-white/80 shrink-0" />
+              <Phone size={18} className="text-white/80 shrink-0" />
+              <MoreVertical size={18} className="text-white/80 shrink-0" />
+            </div>
+            {/* Chat area */}
+            <div className="flex-1 overflow-hidden bg-[#ECE5DD] flex items-center">
+              <WhatsappBubble messages={problemMessages.slice(0, visibleCount)} typingType={typingType} />
+            </div>
+            {/* Footer */}
+            <div className="flex items-center gap-2 px-2 py-2 bg-[#F0F0F0] shrink-0">
+              <Smile size={22} className="text-[#54656F] shrink-0" />
+              <div className="flex-1 bg-white rounded-full px-3 py-1.5 text-[13px] text-[#aaa]">
+                Mensagem
+              </div>
+              <Mic size={22} className="text-[#54656F] shrink-0" />
+            </div>
           </div>
         </div>
       </div>
