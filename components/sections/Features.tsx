@@ -28,7 +28,7 @@ const featureImagesById: Record<string, string> = {
 };
 
 export function Features() {
-  const [activeId, setActiveId] = useState<string>(FEATURES.items[0].id);
+  const [activeId, setActiveId] = useState<string>(FEATURES.items[2].id);
   const activeImageSrc = featureImagesById[activeId] ?? '/images/features-1.png';
 
   return (
